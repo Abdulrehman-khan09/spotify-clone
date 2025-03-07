@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify-Music Player</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/extra.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="img-container">
+          <ul>
+            <li><img class="logo" src="img/logo.svg" alt="" />Spotify</li>
+            <li><img class="home" src="img/home.svg" alt="" />home</li>
+            <li><img class="search" src="img/search.svg" alt="" />search</li>
+          </ul>
+          <img class="cross" src="img/cross.svg" alt="">
+        </div>
+        <div class="library">
+          <div class="playlist-img">
+              <img class="playlist-svg" src="img/playlist.svg" alt=""  />
+                <h2>your libaray</h2>
+          </div>
+          <div class="songslist">
+            <ul>
+              
+            </ul>
+          </div>
+          <div class="footer">
+          <a href="https://www.spotify.com/pk-en/legal/" target="_blank">Legal</a>
+          <a href="https://www.spotify.com/pk-en/safetyandprivacy/" target="_blank" >Safety & Privacy Center</a>
+          <a href="https://www.spotify.com/pk-en/legal/privacy-policy/" target="_blank">Privacy Policy</a>
+          <a href="https://www.spotify.com/pk-en/legal/cookies-policy/" target="_blank">Cookies</a>
+          <a href="https://www.spotify.com/pk-en/legal/privacy-policy/#s3" target="_blank">About Ads</a>
+          <a href="https://www.spotify.com/pk-en/accessibility/" target="_blank">Accessibility</a>
+          <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a>
+            </div>   <!--  end of footer -->
+        </div>
+           </div>   <!-- end of left div container child -->
+
+      <div class="right">
+        <div class="header">
+          <div class="nav">
+            <img class="hamburger" src="img/hamburger.svg" alt="">
+          <img class="img-header" src="img/left.svg" alt="">
+          <img class="img-header right-img" src="img/right.svg" alt="">
+        </div>
+        <div class="button">
+          <button class="sign-btn">Sign in</button>
+          <button class="log-btn"> Login</button>
+        </div> 
+          </div>
+          <div class="spotifyPlaylist">
+            <h1>Spotify Playlists</h1>
+            <div class="card-container">
+  <!-- we created first dummy cards to adjust styling now we will only craete cards in js by using fetching-->
+   <!-- we will empty the card container-->
+             
+            </div><!--end of card container-->
+                  </div> <!--end of spotify playlist-->
+                     
+                  <div class="playbar">
+                    <div class="seekbar">
+                      <div class="circle">
+                        
+                      </div>
+                    </div>
+                    <div class="abovebar">
+                    <div class="songinfo"> <!-- will be updated in js-->
+                    </div>
+                    <div class="volcont">
+                    <div class="rangevol">
+                        <input class="input" type="range" name="volume" id="">
+                        <img class="volume" src="img/volume.svg" alt="">
+                      </div>
+                    </div>
+                     
+                        <div class="songbtn">
+                    <img  id="previous" class="play-img" src="img/previous.svg" alt="">
+                         <img id="play" class="play-img" src="img/play.svg" alt="">
+                         <img id="next"  class="play-img" src="img/next.svg" alt="">
+                        </div>
+                  <div class="songtime">
+                            <!-- will be updated in js-->
+                        </div>
+                      </div>  <!--end of above bar-->
+                  </div><!--end of playbar-->
+
+      </div>  <!-- end of right -->
+    </div>      <!-- end of div container parent -->
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

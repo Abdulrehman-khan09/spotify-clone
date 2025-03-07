@@ -1,0 +1,110 @@
+/* For WebKit Browsers */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: lightgray;
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: black lightgray;
+  }
+    
+  input[type="range"] {
+    -webkit-appearance: none; /* Remove default styling for WebKit */
+    width: 100%;
+    height: 8px; /* Track height */
+    background: lightgray; /* Default track background color */
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: orange;
+    height: 8px; /* Ensure track height matches the overall height */
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+    position: relative;
+    margin-top: -4px; /* Adjust margin-top to center the thumb */
+  }
+  
+  input[type="range"]::-moz-range-track {
+    background: orange;
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #333;
+    position: relative;
+    margin-top: -4px; /* Adjust margin-top to center the thumb */
+  }
+  
+
+  .songslist ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .songslist ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #80808069;
+    cursor: pointer;
+  }
+  
+  .songslist ul li .info {
+    flex-grow: 1;
+    padding-left: 10px;
+  }
+  
+  .songslist ul li .playnow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .songslist ul li img.music-img {
+    width: 20px;
+    filter: invert(1);
+  }
+  
+  .songslist ul li img.svg {
+    width: 20px;
+    filter: invert(1);
+  }
+  
+  .songslist ul li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .songslist ul li p.songs {
+    margin: 0;
+    font-size: 12px;
+  }
+  
