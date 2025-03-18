@@ -121,13 +121,12 @@ async function displayAlbums() {
           }
       }
   }
-
+  
   let cards = document.querySelectorAll(".card");
  
   cards.forEach(e => {
       e.addEventListener("click", async (event) => {
           let folder = event.currentTarget.dataset.folder;
-          
           songs = await getSongs(`songs/${encodeURIComponent(folder)}`);
           playMusic(songs[0]);
       });
@@ -167,6 +166,7 @@ async function main() {
 
     document.querySelector(".hamburger").addEventListener("click", () => {
         document.querySelector(".left").style.left = "0";
+        document.querySelector(".footer").style = "display: none";
     });
 
     document.querySelector(".cross").addEventListener("click", () => {
